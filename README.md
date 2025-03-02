@@ -8,7 +8,7 @@ This repository contains a dataset mapping SHRUG (Socioeconomic High-resolution 
 
 The mapping process employed a weighted spatial merge approach due to the small size of individual SHRUG villages. A direct match to constituency shapefiles would result in numerous spurious merges. Instead, the following procedure was implemented:
 
-1. SHRUG villages were first matched to higher administrative shapefile levels (subdistricts)
+1. SHRUG villages were first matched to higher ADM5 shapefile levels (subdistricts)
 2. These subdistricts were then matched to parliamentary constituencies
 3. A spatial merge was performed for all SHRUG villages where 80% or more of the village area falls within a parliamentary constituency
 
