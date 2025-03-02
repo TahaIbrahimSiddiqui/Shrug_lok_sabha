@@ -1,69 +1,66 @@
-# Shrug_lok_sabha
-Shrug-to-Lok Sabha
+# SHRUG Villages to Lok Sabha Constituencies Mapping
 
-# Shrid to Lok Sabha Constituency Mapper
+## Overview
 
-This project maps shrid villages to Lok Sabha constituencies using a weighted spatial merge technique. Due to the small size of individual shrid villages, a direct merge with the constituency shapefile tends to produce spurious results. Instead, this project uses a higher administrative shapefile (subdistrict) to first match with parliamentary constituencies, followed by a spatial merge for all shrid villages where at least 80% of the area falls under a given parliamentary constituency (PC).
+This repository contains a dataset mapping SHRUG (Socioeconomic High-resolution Rural-Urban Geographic) villages to Lok Sabha constituencies along with electoral data from the 2014 and 2019 Lok Sabha elections. This mapping enables researchers to analyze electoral outcomes at a granular village level.
 
 ## Methodology
 
-- **Weighted Spatial Merge**:  
-  - Direct matching of shrid villages to constituency shapefiles often leads to numerous spurious merges because the villages are very small.  
-  - To improve the accuracy, a higher administrative shapefile (subdistrict level) was used to map to the parliamentary constituencies.  
-  - A spatial merge is then performed on the shrid villages that have a majority (≥80%) of their area falling within a specific parliamentary constituency.
+The mapping process employed a weighted spatial merge approach due to the small size of individual SHRUG villages. A direct match to constituency shapefiles would result in numerous spurious merges. Instead, the following procedure was implemented:
 
-- **Diagnostic Testing**:  
-  - Additional diagnostic tests have been run to identify potential errors, particularly along the borders between two PCs.  
-  - While minor errors remain along these borders, they appear to be minimal. Efforts to further resolve these issues are ongoing.
+1. SHRUG villages were first matched to higher administrative shapefile levels (subdistricts)
+2. These subdistricts were then matched to parliamentary constituencies
+3. A spatial merge was performed for all SHRUG villages where 80% or more of the village area falls within a parliamentary constituency
 
-## Dataset Details
+## Known Issues and Limitations
 
-The dataset `shrid2` includes the following variables:
+While this approach significantly reduces erroneous matches, there are still some errors on the border between two parliamentary constituencies. However, I have run other diagnostic tests and these errors seem to be minute, but I am still figuring out how to resolve them and am open to suggestions to improve this.
 
-- `pc_name`
-- `trailingcandidate_2014`
-- `trailingparty_2014`
-- `margin_2014`
-- `month_2014`
-- `statename_2014`
-- `winningcandidate_2014`
-- `sex_2014`
-- `party_2014`
-- `constituencytype_2014`
-- `totalelectors_2014`
-- `validvotes_2014`
-- `candidatevotes_2014`
-- `turnout_2014`
-- `candidatevoteshare_2014`
-- `winningmargin_2014`
-- `month_2019`
-- `statename_2019`
-- `winningcandidate_2019`
-- `sex_2019`
-- `party_2019`
-- `constituencytype_2019`
-- `totalelectors_2019`
-- `validvotes_2019`
-- `candidatevotes_2019`
-- `turnout_2019`
-- `candidatevoteshare_2019`
-- `winningmargin_2019`
-- `trailingcandidate_2019`
-- `trailingparty_2019`
+**Important Note**: Since SHRUG only contains data for rural India, 22 parliamentary constituencies that are entirely urban are not included in this election dataset.
 
-## Licensing and Citation
+## License and Citation
 
-- **License Disclaimer**:  
-  I do not own any license to the shrid data and do not claim any proprietary rights. This project is provided solely as an effort to help others.
+This mapping does not claim ownership of the SHRUG dataset. If you use SHRUG data in your research, please cite:
 
-- **Citation**:  
-  If you use the shrid data, please cite:  
-  *Asher, Sam, et al. "Development research at high geographic resolution: an analysis of night-lights, firms, and poverty in India using the shrid open data platform." The World Bank Economic Review 35.4 (2021): 845-871.*
+> Asher, Sam, et al. "Development research at high geographic resolution: an analysis of night-lights, firms, and poverty in India using the SHRUG open data platform." The World Bank Economic Review 35.4 (2021): 845-871.
 
-## Future Work
+## Dataset Variables
 
-Further work is underway to resolve the minor spatial mismatches observed along constituency borders to improve the overall accuracy of the mapping.
+The dataset contains the following variables:
 
-## Acknowledgements
+* **shrid2**: Unique SHRUG village identifier
+* **pc_name**: Parliamentary constituency name
+* **state_name**: State name
 
-Thank you to the providers of the shrid open data platform for making this data available to the public.
+**2014 Election Variables**:
+* **winningcandidate_2014**: Name of the winning candidate
+* **party_2014**: Political party of the winning candidate
+* **sex_2014**: Gender of the winning candidate
+* **trailingcandidate_2014**: Name of the runner-up candidate
+* **trailingparty_2014**: Political party of the runner-up candidate
+* **margin_2014**: Margin of victory (votes)
+* **month_2014**: Month when the election was held
+* **statename_2014**: State name as recorded in 2014 election data
+* **constituencytype_2014**: Type of constituency (General/SC/ST)
+* **totalelectors_2014**: Total number of eligible voters
+* **validvotes_2014**: Total number of valid votes cast
+* **candidatevotes_2014**: Votes received by the winning candidate
+* **turnout_2014**: Voter turnout percentage
+* **candidatevoteshare_2014**: Percentage of votes received by the winning candidate
+* **winningmargin_2014**: Winning margin as a percentage
+
+**2019 Election Variables**:
+* **winningcandidate_2019**: Name of the winning candidate
+* **party_2019**: Political party of the winning candidate
+* **sex_2019**: Gender of the winning candidate
+* **trailingcandidate_2019**: Name of the runner-up candidate
+* **trailingparty_2019**: Political party of the runner-up candidate
+* **month_2019**: Month when the election was held
+* **statename_2019**: State name as recorded in 2019 election data
+* **constituencytype_2019**: Type of constituency (General/SC/ST)
+* **totalelectors_2019**: Total number of eligible voters
+* **validvotes_2019**: Total number of valid votes cast
+* **candidatevotes_2019**: Votes received by the winning candidate
+* **turnout_2019**: Voter turnout percentage
+* **candidatevoteshare_2019**: Percentage of votes received by the winning candidate
+* **winningmargin_2019**: Winning margin as a percentage
