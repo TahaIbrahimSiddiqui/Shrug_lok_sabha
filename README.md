@@ -66,3 +66,14 @@ The dataset contains the following variables:
 * **turnout_2019**: Voter turnout percentage
 * **candidatevoteshare_2019**: Percentage of votes received by the winning candidate
 * **winningmargin_2019**: Winning margin as a percentage
+
+## ☕ Support My Work: Buy Me a Coffee or Chai! 🍵  
+
+I love diving deep into **data and politics**, creating insights that contribute to the collective pool of knowledge. If you enjoy what I’m doing and would like me to continue making such **public data goods**, you can encourage me by **buying me a coffee or chai**!  
+
+- 🌍 **For people abroad**, you can support me here: [https://buymeacoffee.com/tahaibrahim]  
+- 🇮🇳 **For people in India** who prefer the ease of UPI, use this link: [https://onlychai.neocities.org/support.html?name=Taha%20Ibrahim%20Siddiqui&upi=taha.i.siddiq-1%40okhdfcbank]  
+
+Every little bit helps me keep exploring, analyzing, and sharing valuable insights. Thank you for your support! 🚀  
+
+
