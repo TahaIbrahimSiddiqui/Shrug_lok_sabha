@@ -69,10 +69,10 @@ The dataset contains the following variables:
 
 ## ☕ Support My Work: Buy Me a Coffee or Chai! 🍵  
 
-I love diving deep into **data and politics**, creating insights that contribute to the collective pool of knowledge. If you enjoy what I’m doing and would like me to continue making such **public data goods**, you can encourage me by **buying me a coffee or chai**!  
+Creating such dataset takes a lot of late night with coffee and chai. If you enjoy what I’m doing and would like me to continue making such **public data goods**, you can encourage me by **buying me a coffee or chai**!  
 
-- 🌍 **For people abroad**, you can support me [here](https://buymeacoffee.com/tahaibrahim)  
-- 🇮🇳 **For people in India** who prefer the ease of UPI, use this [link](https://onlychai.neocities.org/support.html?name=Taha%20Ibrahim%20Siddiqui&upi=taha.i.siddiq-1%40okhdfcbank)  
+- **For people abroad**, you can support me [here](https://buymeacoffee.com/tahaibrahim)  
+- **For people in India** who prefer the ease of UPI, use this [link](https://onlychai.neocities.org/support.html?name=Taha%20Ibrahim%20Siddiqui&upi=taha.i.siddiq-1%40okhdfcbank)  
 
 Every little bit helps me keep exploring, analyzing, and sharing valuable insights. Thank you for your support! 🚀  
 
