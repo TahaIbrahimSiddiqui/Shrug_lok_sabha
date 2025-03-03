@@ -69,7 +69,7 @@ The dataset contains the following variables:
 
 ## ☕ Support My Work: Buy Me a Coffee or Chai! 🍵  
 
-Creating such dataset takes a lot of late night with coffee and chai. If you enjoy what I’m doing and would like me to continue making such **public data goods**, you can encourage me by **buying me a coffee or chai**!  
+If you enjoy what I’m doing and would like me to continue making such **public data goods**, you can encourage me by **buying me a coffee or chai**!  
 
 - **For people abroad**, you can support me [here](https://buymeacoffee.com/tahaibrahim)  
 - **For people in India** who prefer the ease of UPI, use this [link](https://onlychai.neocities.org/support.html?name=Taha%20Ibrahim%20Siddiqui&upi=taha.i.siddiq-1%40okhdfcbank)  
